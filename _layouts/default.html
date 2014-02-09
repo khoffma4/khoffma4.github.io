@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="stylesheet" href="/css/posts.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div class="col-sm-3 side-column">
+        <div class="row-fluid">
+          <img id="profile-picture" src="/images/profile-picture.png" width="150">
+        </div>
+        <h2 class="site-title"><a href="/">{{ site.name }}</a></h2>
+        <h3 class="site-subtitle">Ruby Developer</h3>
+        <h3 class="site-subtitle">Based in Chicago, IL</h3>
+        <div class="row-fluid">
+      <div class="social-media-links">
+        <ul>
+          <li>
+            <a href="http://www.linkedin.com/in/khoffma4" target="_blank">
+              <img src="/images/linkedin.png" title="LinkedIn">
+            </a>
+          </li>
+          <li>
+            <a href="http://github.com/khoffma4" target="_blank" width="44px">
+              <img src="/images/github_icon.png" title="Github" class="github-icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/khoffma4" target="_blank">
+              <img src="/images/twitter.png" title="Twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+        </div>
+
+      </div>
+      <div class="col-sm-9">
+        <div class="header">
+        </div>
+        {{ content }}
+      </div>
+    </div>
+
+  </body>
+</html>
