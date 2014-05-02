@@ -12,7 +12,7 @@ ul { margin-left:30px }
 #resume {
   max-height: 11in;
   max-width: 8.5in;
-  margin: 0px auto;
+  margin: 0px auto 40px;
 }
 
 #resume h3 { 
@@ -88,6 +88,9 @@ h2 {
   text-align: left;
 }
 
+.starter-league {
+  margin-bottom: 10px;
+}
 @media (max-width: 900px) {
   #resume { max-height: none }
 }
@@ -106,7 +109,10 @@ h2 {
 }
 
 @media print {
-  #resume { text-align: inherit; }
+  #resume {
+    text-align: inherit;
+    margin-bottom: 0px;
+  }
   .col-sm-6 {
     float: left;
     width: 50%;
@@ -120,4 +126,7 @@ h2 {
   }
   .date { text-align: right; }
   h1 { margin-top: 0px; }
+  .class-list:last-child {
+     page-break-after: auto;
+  }
 }
