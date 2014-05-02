@@ -1,0 +1,123 @@
+* {
+  font-family:'Lucida Sans Unicode', sans-serif;
+  margin:0px;
+  padding:0px;
+  line-height:1.25em;
+}
+
+.clear {clear:both}
+
+ul { margin-left:30px }
+
+#resume {
+  max-height: 11in;
+  max-width: 8.5in;
+  margin: 0px auto;
+}
+
+#resume h3 { 
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#wrapper {
+  width:100%;
+  height:100%;
+}
+
+header { width:100%; }
+header h1 {
+  text-align:center;
+  font-size:24px;
+  font-weight:600;
+}
+
+.contact {
+  text-align:center;
+  font-size:14px
+}
+
+.address {
+  display:inline;
+  font-style:normal
+}
+
+.telephone {
+  display:inline;
+  margin: 0 20px 0 20px
+}
+
+.email { display:inline }
+
+h2 {
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  font-size:16px;
+  line-height:24px;
+  margin:5px 0px;
+  font-weight:400
+} 
+
+.class_list { font-size: 12px; }
+
+.education_header, .experience_header {
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size:18px;
+  font-style:italic;
+  font-weight:400;
+  text-align: right;
+}
+
+.school p, .company p, .date p {
+  margin-bottom: 0px
+}
+
+.school h3 {
+  font-size:18px;
+  font-style:italic;
+  font-weight:400;
+}
+
+.job-description ul {
+  font-size: 12px;
+  list-style: inherit;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  #resume { max-height: none }
+}
+
+@media (max-width: 767px) {
+  #resume, .date {text-align: center;}
+  .class_list ul {
+    margin-bottom: 0px;
+    list-style-position: inside;
+  }
+  .address, .telephone, .email {
+    display: block;
+    width: 100%;
+  }
+  .education, .experience { margin: 10px 0px }
+}
+
+@media print {
+  #resume { text-align: inherit; }
+  .col-sm-6 {
+    float: left;
+    width: 50%;
+  }
+  a[href]:after {
+    content: none !important;
+  }
+  .class_list ul {
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .date { text-align: right; }
+  h1 { margin-top: 0px; }
+}
